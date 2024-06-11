@@ -267,6 +267,10 @@ ul li:hover a {
   .social .links {
     padding: 0 10%;
   }
+
+  .social p {
+    font-size: 18px;
+  }
 }
 
 /* Footer */
