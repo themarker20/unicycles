@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/overwrite.css" />
+    <title>Unicycle</title>
+  </head>
+  <body>
+    <section
+      class="main h-100 w-[100%] text-center flex align-center justify-center gap-4"
+    >
+      <nav class="fixed h-[60px] py-4 t-0 flex justify-between">
+        <div class="logo">
+          <img src="./imgs/logo.png" alt="Logo" class="w-12" />
+        </div>
+        <ul class="flex gap-8 text-white">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="absolute t-0 l-0 w-[100%] h-[100%] overlay"></div>
+      <div
+        class="info text-white text-center flex align-center justify-center gap-8"
+      >
+        <p>we all love</p>
+        <h1>Unicycles</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          labore vitae totam asperiores fuga voluptatibus!
+        </p>
+        <button class="rounded px-4 py-4">See Unicycles</button>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about py-8 text-center flex align-center justify-between">
+      <h2 class="">Our Unicycles</h2>
+      <div class="content pt-16 flex align-center justify-center gap-16">
+        <div class="box">
+          <img src="./imgs/p-1.png" alt="Product" />
+          <h4>Most Sales</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+            perspiciatis dolore consequatur.
+          </p>
+        </div>
+        <div class="box">
+          <img src="./imgs/p-2.png" alt="Product" />
+          <h4>Long Rides</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+            saepe quia! Maiores!
+          </p>
+        </div>
+        <div class="box">
+          <img src="./imgs/p-3.png" alt="Product" />
+          <h4>Show Riders</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+            voluptate quos veniam.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testemonials py-8 px-16 flex gap-16">
+      <div class="text flex justify-center gap-4">
+        <h3>Unicycle Training</h3>
+        <p>Train with us, we can do everything, all free..</p>
+        <button class="rounded px-2 py-2">Find Out More</button>
+      </div>
+      <div class="video">
+        <iframe
+          width="300"
+          height="200"
+          src="https://www.youtube.com/embed/Dc_cjI5SVLU?si=0Ob-t-HZVPLJarya"
+          title="YouTube video player"
+          frameborder="2"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Q/A -->
+    <section class="ques py-32 flex gap-8">
+      <h3 class="pb-[25px]">Frequently Asked Questions...</h3>
+
+      <div class="box bg-gray-300 rounded p-4 w-[70%]">
+        <div class="q active-q px-4 py-4">
+          <div class="q-in flex">
+            <h5 class="text-blue-500 bold">
+              What Do you think About Product 1?
+            </h5>
+            <i class="fa-solid fa-circle-minus text-blue-500"></i>
+          </div>
+          <div class="answer text-gray-500 pt-[10px] ml-4">
+            <p>The Best I have ever had.</p>
+          </div>
+        </div>
+        <div class="q px-4 py-6">
+          <div class="q-in flex">
+            <h5 class="text-gray-900 bold">What we should do for improve?</h5>
+            <i class="fa-solid fa-circle-plus text-gray-900"></i>
+          </div>
+        </div>
+        <div class="q px-4 py-4">
+          <div class="q-in flex">
+            <h5 class="text-gray-900 bold">Should we consider more types?</h5>
+            <i class="fa-solid fa-circle-plus text-gray-900"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Follow Our Social -->
+    <div class="social h-[50px] w-100 flex m:px-8 px-4">
+      <p>Follow Our Social Media</p>
+      <div class="links flex">
+        <a href="#">
+          <img src="./imgs/social-1.png" alt="" class="w-[40px]" />
+        </a>
+        <a href="#">
+          <img src="./imgs/social-2.png" alt="" class="w-[40px]" />
+        </a>
+        <a href="#">
+          <img src="./imgs/social-3.png" alt="" class="w-[40px]" />
+        </a>
+        <a href="#">
+          <img src="./imgs/social-4.webp" alt="" class="w-[40px]" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="flex py-[15px]">
+      <ul class="flex gap-4">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+      <div class="logo">
+        <img src="./imgs/logo.png" alt="Logo" class="w-12" />
+      </div>
+      <p>Code - <span class="text-blue-500 bold">Ahmed Ben Ismael</span></p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.699);
+  z-index: 1;
+}
+
+/* Home */
+section.main {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./imgs/home-cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.599);
+  width: 100%;
+  padding: 10px 15px;
+  align-items: center;
+  position: absolute !important;
+}
+
+nav ul {
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.info {
+  z-index: 2;
+  flex-direction: column;
+  width: 95%;
+}
+
+.info button {
+  background-color: rgb(241, 175, 50);
+  font-size: 16px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.info button:hover {
+  background-color: rgb(211, 154, 49);
+}
+
+.info p:first-of-type {
+  font-size: 25px;
+}
+
+.info p:last-of-type {
+  font-size: 15px;
+}
+
+.info h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+/* Active Link */
+ul li a.active {
+  color: rgb(241, 175, 50);
+}
+
+ul li:hover a {
+  color: rgb(241, 175, 50);
+}
+
+@media (max-width: 768px) {
+  .main h1 {
+    font-size: 50px;
+  }
+  .info p:first-of-type {
+    font-size: 20px;
+  }
+
+  .info p:last-of-type {
+    font-size: 12px;
+  }
+}
+
+/* About */
+.about {
+  width: 95%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.about h2 {
+  font-size: 30px;
+  position: relative;
+}
+
+.about h2::after {
+  content: "";
+  position: absolute;
+  top: 51px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(241, 175, 50);
+  height: 3px;
+  width: 75px;
+  border-radius: 20px;
+}
+
+.about .content {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.about .box h4 {
+  color: rgb(241, 175, 50);
+  font-style: italic;
+  font-size: 22px;
+}
+
+.about .box img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.about .box p {
+  font-size: 13px;
+}
+
+.about .box > * {
+  padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .about .content {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .about .content .box {
+    width: 300px;
+  }
+}
+
+/* Testemonials */
+.testemonials {
+  background-image: url(./imgs/testemonials.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: space-between;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.testemonials .text {
+  align-items: center;
+  flex-direction: column;
+  z-index: 4;
+}
+.testemonials .video {
+  z-index: 4;
+}
+
+.testemonials::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  background: rgba(241, 174, 50, 0.589);
+  top: 0;
+  left: -12%;
+  transform: skew(17deg);
+  z-index: 1;
+}
+
+.testemonials .text button {
+  border: 2px solid #000;
+}
+
+.testemonials .text h3 {
+  font-size: 27px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .testemonials {
+    flex-direction: column;
+    height: 600px;
+  }
+
+  .testemonials::after {
+    width: 100%;
+    height: 50%;
+    transform: skew(0);
+    left: 0;
+  }
+}
+
+/* Questions */
+.ques {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ques h3 {
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.ques .q {
+  position: relative;
+  cursor: pointer;
+}
+
+.ques .q::after {
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 95%;
+  width: 12%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: #3b82f680;
+  transition: all 0.8s;
+}
+
+.ques .q:hover::after,
+.ques .q.active-q::after {
+  width: 30%;
+}
+
+.ques .q-in {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ques .q:not(.active-q)::after {
+  background-color: #111827;
+}
+
+/* Social */
+.social {
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(241, 174, 50, 0.856);
+}
+
+.social p {
+  font-size: 27px;
+}
+
+.social .links {
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .social .links {
+    padding: 0 10%;
+  }
+}
+
+/* Footer */
+footer {
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer ul {
+  align-items: center;
+}
+
+footer ul li {
+  cursor: pointer;
+}
+
+footer ul li:hover {
+  color: rgb(241, 175, 50);
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
