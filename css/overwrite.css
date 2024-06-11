@@ -17,7 +17,7 @@
 section.main {
   width: 100%;
   height: 100vh;
-  background-image: url(./imgs/home-cover.jpg);
+  background-image: url(./../imgs/home-cover.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -151,7 +151,7 @@ ul li:hover a {
 
 /* Testemonials */
 .testemonials {
-  background-image: url(./imgs/testemonials.webp);
+  background-image: url(./../imgs/testemonials.webp);
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
